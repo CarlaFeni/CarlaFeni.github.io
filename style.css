@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+    background-color: #001f3f; /* navyblue */
     color: #f1f1f1;
   }
   
@@ -21,6 +21,9 @@ body {
     text-align: center;
     padding: 6rem 2rem;
   }
+  h1 span, h2 {
+    color: #ff9900;
+  }
   
   .hero h1 span {
     color: #00ffcc;
@@ -30,11 +33,19 @@ body {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #00ffcc;
-    color: #000;
+    background-color: #ff9900; /* naranja */
+    color: #fff;
     font-weight: bold;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
   }
+  
+  .btn:hover {
+    background-color: #cc7a00; /* naranja más oscuro al pasar el mouse */
+  }
+  
   
   .sobre-mi {
     display: flex;
