@@ -3,26 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Tu Nombre</title>
+  <title>Portfolio - Carla Fenimam</title>
   <link rel="stylesheet" href="style.css" />
+ 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
-<body>
-  <header class="hero">
-    <div class="container">
-      <h1>Hi There!<br><span>I am Software Developer</span></h1>
-      <p>I make the complex simple.</p>
-      <a href="#contacto" class="btn">Contáctame</a>
-    </div>
-  </header>
 
-  <section class="sobre-mi">
-    <div class="container">
-      <img src="https://via.placeholder.com/200" alt="Tu foto" />
-      <div>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <a href="#inicio" class="nav-logo">Carla Fenimam</a>
+    </div>
+    <ul class="nav-center nav-links">
+      <!-- Español -->
+      <li class="lang-es"><a href="#inicio">Inicio</a></li>
+      <li class="lang-es"><a href="#sobre-mi">Sobre mí</a></li>
+      <li class="lang-es"><a href="#proyectos">Proyectos</a></li>
+      <li class="lang-es"><a href="#contacto">Contacto</a></li>
+
+      <!-- Inglés -->
+      <li class="lang-en" style="display: none;"><a href="#inicio">Home</a></li>
+      <li class="lang-en" style="display: none;"><a href="#sobre-mi">About</a></li>
+      <li class="lang-en" style="display: none;"><a href="#proyectos">Projects</a></li>
+      <li class="lang-en" style="display: none;"><a href="#contacto">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="langToggle" class="btn lang-btn">EN</button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HEADER -->
+<header class="hero" id="inicio">
+  <div class="container hero-flex">
+    <div class="foto-perfil">
+      <img src="fotoportfolio.jpg" alt="Foto de Carla" />
+    </div>
+    <div class="texto-hero">
+      <div class="lang-es">
+        <h1>¡Hola!<br><span>Soy Desarrolladora de Software</span></h1>
+        <p>Ladrillo a ladrillo, transformo ideas en soluciones funcionales.</p>
+        <a href="#contacto" class="btn">Contáctame</a>
+      </div>
+      <div class="lang-en" style="display: none;">
+        <h1>Hi There!<br><span>I am a Software Developer</span></h1>
+        <p>Brick by brick, I turn ideas into functional solutions.</p>
+        <a href="#contacto" class="btn">Contact me</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="sobre-mi" id="sobre-mi">
+  <div class="container sobre-mi-flex">
+    <div class="texto-perfil">
+      <div class="lang-es">
         <h2>¿Quién soy?</h2>
-        <p>Soy Carla, desarrolladora backend multiplataforma enfocada en el desarrollo de aplicaciones sólidas y funcionales.</p>
+        <p>¡Hola! Soy Carla, desarrolladora backend multiplataforma. Me especializo en crear soluciones estables, seguras y escalables que impulsan el funcionamiento interno de las aplicaciones.</p>
+        <p>Disfruto resolver problemas complejos, trabajar con APIs y optimizar procesos detrás de escena. Siempre estoy aprendiendo nuevas tecnologías y mejorando mis habilidades para entregar el mejor resultado posible.</p>
         <ul>
           <li><strong>Edad:</strong> 24</li>
           <li><strong>Ubicación:</strong> Valencia, España</li>
@@ -30,39 +71,94 @@
         </ul>
         <a href="Curriculum_Carla.pdf" class="btn">Descargar CV</a>
       </div>
-    </div>
-  </section>
 
-  <section class="servicios">
-    <div class="container">
-      <h2>Mis Servicios</h2>
-      <div class="grid">
-        <div class="card">🖥️ 
-            <h3>Desarrollo Backend</h3>
-            <p>APIs RESTful, lógica de negocio, gestión de bases de datos y arquitectura robusta.</p>
-          </div>
-          
-          <div class="card">⚙️ 
-            <h3>Integraciones de Sistemas</h3>
-            <p>Conexión con servicios externos, APIs de terceros, y automatización de procesos.</p>
-          </div>
-          
-          <div class="card">🛡️ 
-            <h3>Seguridad y Autenticación</h3>
-            <p>Implementación de login seguro, roles de usuario y protección de datos sensibles.</p>
-          </div>
-          <div class="card">🎨 
-            <h3>Diseño UI/UX</h3>
-            <p>Interfaces limpias y centradas en el usuario.</p>
-        </div>          
+      <div class="lang-en" style="display: none;">
+        <h2>Who am I?</h2>
+        <p>Hi! I'm Carla, a cross-platform backend developer. I specialize in building secure, stable, and scalable solutions that power the core of applications.</p>
+        <p>I enjoy solving complex problems, working with APIs, and optimizing systems behind the scenes. I’m always learning new tech to deliver better results.</p>
+        <ul>
+          <li><strong>Age:</strong> 24</li>
+          <li><strong>Location:</strong> Valencia, Spain</li>
+          <li><strong>Email:</strong> carlaborges0905@gmail.com</li>
+        </ul>
+        <a href="Curriculum_Carla.pdf" class="btn">Download CV</a>
       </div>
     </div>
-  </section>
-
-  <footer id="contacto">
-    <div class="container">
-      <p>© 2025 Carla Fenimam | Contacto: carlaborges0905@gmail.com</p>
+  </div>
+</section>
+<!-- PROYECTOS DESTACADOS -->
+<section class="proyectos" id="proyectos">
+  <div class="container">
+    <div class="lang-es">
+      <h2>Mis Proyectos</h2>
+      <p>Estos son algunos proyectos destacados. Podés ver más detalles haciendo clic en cada uno.</p>
     </div>
-  </footer>
+    <div class="lang-en" style="display: none;">
+      <h2>My Projects</h2>
+      <p>Here are some featured projects. Click to see more details about each one.</p>
+    </div>
+
+    <div class="preview-grid">
+      <!-- Proyecto 1 -->
+      <div class="preview-card">
+        <img src="travelTrace.png" alt="Proyecto 1">
+        <h3>Travel Trace</h3>
+        <p>Aplicación para registrar rutas y puntos geolocalizados.</p>
+        <a href="proyectos.html#travel-trace" class="btn">Ver más</a>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="preview-card">
+        <img src="proyecto2.png" alt="Proyecto 2">
+        <h3>Gestión de Usuarios</h3>
+        <p>Plataforma backend con autenticación y roles de usuario.</p>
+        <a href="proyectos.html#user-management" class="btn">Ver más</a>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="preview-card">
+        <img src="proyecto3.png" alt="Proyecto 3">
+        <h3>API Productos</h3>
+        <p>API RESTful con Node.js y MongoDB para catálogo digital.</p>
+        <a href="proyectos.html#api-productos" class="btn">Ver más</a>
+      </div>
+    </div>
+
+    <a href="proyectos.html" class="btn">Ver todos los proyectos</a>
+  </div>
+</section>
+
+
+<!-- SERVICIOS -->
+<section class="servicios">
+  <div class="container">
+    <div class="lang-es">
+      <h2>Mis Servicios</h2>
+      <div class="grid">
+        <div class="card">🖥️ <h3>Desarrollo Backend</h3><p>APIs RESTful, lógica de negocio, gestión de bases de datos y arquitectura robusta.</p></div>
+        <div class="card">⚙️ <h3>Integraciones de Sistemas</h3><p>Conexión con servicios externos, APIs de terceros, y automatización de procesos.</p></div>
+        <div class="card">🛡️ <h3>Seguridad y Autenticación</h3><p>Login seguro, roles de usuario y protección de datos sensibles.</p></div>
+        <div class="card">🎨 <h3>Diseño UI/UX</h3><p>Interfaces limpias y centradas en el usuario.</p></div>
+      </div>
+    </div>
+    <div class="lang-en" style="display: none;">
+      <h2>My Services</h2>
+      <div class="grid">
+        <div class="card">🖥️ <h3>Backend Development</h3><p>RESTful APIs, business logic, database management, and robust architecture.</p></div>
+        <div class="card">⚙️ <h3>Systems Integration</h3><p>Connecting external services, third-party APIs, and process automation.</p></div>
+        <div class="card">🛡️ <h3>Security & Authentication</h3><p>Secure login, user roles, and sensitive data protection.</p></div>
+        <div class="card">🎨 <h3>UI/UX Design</h3><p>Clean, user-centered interfaces.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto">
+  <div class="container">
+    <p>© 2025 Carla Fenimam | carlaborges0905@gmail.com</p>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
