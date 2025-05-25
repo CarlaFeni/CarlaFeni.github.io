@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio - Carla Fenimam</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -10,205 +11,235 @@
 </head>
 
 <body>
-<!-- NAVBAR -->
-<nav class="navbar" data-aos="fade-down">
-  <div class="nav-container">
-    <div class="nav-left">
-      <a href="#inicio" class="nav-logo">Carla Fenimam</a>
-    </div>
-    <ul class="nav-center nav-links">
-      <!-- Español -->
-      <li class="lang-es"><a href="#inicio">Inicio</a></li>
-      <li class="lang-es"><a href="#sobre-mi">Sobre mí</a></li>
-      <li class="lang-es"><a href="#proyectos">Proyectos</a></li>
-      <li class="lang-es"><a href="#contacto">Contacto</a></li>
+  <!-- NAVBAR -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#inicio" class="nav-logo">Carla Fenimam</a>
+      </div>
+      <ul class="nav-center nav-links">
+        <!-- Español -->
+        <li class="lang-es"><a href="#inicio">Inicio</a></li>
+        <li class="lang-es"><a href="#sobre-mi">Sobre mí</a></li>
+        <li class="lang-es"><a href="#proyectos">Proyectos</a></li>
+        <li class="lang-es"><a href="#skills">Habilidades</a></li>
 
-      <!-- Inglés -->
-      <li class="lang-en" style="display: none;"><a href="#inicio">Home</a></li>
-      <li class="lang-en" style="display: none;"><a href="#sobre-mi">About</a></li>
-      <li class="lang-en" style="display: none;"><a href="#proyectos">Projects</a></li>
-      <li class="lang-en" style="display: none;"><a href="#contacto">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <button id="langToggle" class="btn lang-btn">EN</button>
+        <!-- Inglés -->
+        <li class="lang-en" style="display: none;"><a href="#inicio">Home</a></li>
+        <li class="lang-en" style="display: none;"><a href="#sobre-mi">About</a></li>
+        <li class="lang-en" style="display: none;"><a href="#proyectos">Projects</a></li>
+        <li class="lang-en" style="display: none;"><a href="#skills">Skills</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="langToggle" class="btn lang-btn">EN</button>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
-<!-- HEADER -->
-<header class="hero" id="inicio" data-aos="fade-right">
-  <div class="container hero-flex">
-    <div class="foto-perfil">
-      <img src="img/fotoportfolio.jpg" alt="Foto de Carla" />
+  <!-- HEADER -->
+  <header class="hero" id="inicio" data-aos="fade-right">
+    <div class="container hero-flex">
+      <div class="foto-perfil">
+        <img src="img/portfoliofoto.jpg" alt="Foto de Carla" />
+      </div>
+      <div class="texto-hero">
+        <div class="lang-es">
+          <h1>¡Hola!<br><span>Soy Desarrolladora de Software</span></h1>
+          <p>Ladrillo a ladrillo, transformo ideas en soluciones funcionales.</p>
+          <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+        <div class="lang-en" style="display: none;">
+          <h1>Hi There!<br><span>I am a Software Developer</span></h1>
+          <p>Brick by brick, I turn ideas into functional solutions.</p>
+          <a href="#contacto" class="btn">Contact me</a>
+        </div>
+      </div>
     </div>
-    <div class="texto-hero">
+  </header>
+
+
+  <section class="sobre-mi" id="sobre-mi" data-aos="fade-left">
+    <div class="container sobre-mi-flex">
+      <div class="texto-perfil">
+        <div class="lang-es">
+          <h2>¿Quién soy?</h2>
+          <p>¡Hola! Soy Carla, desarrolladora backend multiplataforma. Me especializo en crear soluciones estables,
+            seguras y escalables que impulsan el funcionamiento interno de las aplicaciones.</p>
+          <p>Disfruto resolver problemas complejos, trabajar con APIs y optimizar procesos detrás de escena. Siempre
+            estoy aprendiendo nuevas tecnologías y mejorando mis habilidades para entregar el mejor resultado posible.
+          </p>
+          <ul>
+            <li><strong>Edad:</strong> 24</li>
+            <li><strong>Ubicación:</strong> Valencia, España</li>
+            <li><strong>Email:</strong> carlaborges0905@gmail.com</li>
+          </ul>
+          <a href="curriculo-es.pdf" class="btn">Descargar CV - ES</a>
+          <a href="cv-en.pdf" class="btn">Descargar CV - EN</a>
+        </div>
+
+        <div class="lang-en" style="display: none;">
+          <h2>Who am I?</h2>
+          <p>Hi! I'm Carla, a cross-platform backend developer. I specialize in building secure, stable, and scalable
+            solutions that power the core of applications.</p>
+          <p>I enjoy solving complex problems, working with APIs, and optimizing systems behind the scenes. I’m always
+            learning new tech to deliver better results.</p>
+          <ul>
+            <li><strong>Age:</strong> 24</li>
+            <li><strong>Location:</strong> Valencia, Spain</li>
+            <li><strong>Email:</strong> carlaborges0905@gmail.com</li>
+          </ul>
+          <a href="curriculo-es.pdf" class="btn">Download CV - ES</a>
+          <a href="cv-en.pdf" class="btn">Download CV - EN</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROYECTOS DESTACADOS -->
+  <section class="proyectos" id="proyectos" data-aos="fade-up">
+    <div class="container">
       <div class="lang-es">
-        <h1>¡Hola!<br><span>Soy Desarrolladora de Software</span></h1>
-        <p>Ladrillo a ladrillo, transformo ideas en soluciones funcionales.</p>
-        <a href="#contacto" class="btn">Contáctame</a>
+        <h2>Mis Proyectos</h2>
+        <p>Estos son algunos proyectos destacados. Podés ver más detalles haciendo clic en cada uno.</p>
       </div>
       <div class="lang-en" style="display: none;">
-        <h1>Hi There!<br><span>I am a Software Developer</span></h1>
-        <p>Brick by brick, I turn ideas into functional solutions.</p>
-        <a href="#contacto" class="btn">Contact me</a>
+        <h2>My Projects</h2>
+        <p>Here are some featured projects. Click to see more details about each one.</p>
       </div>
-    </div>
-  </div>
-</header>
 
+      <div class="preview-grid">
+        <!-- Proyecto 1 -->
+        <div class="preview-card" data-aos="fade-left">
+          <img src="img/travelTrace.png" alt="Proyecto 1">
+          <h3>
+            <span class="lang-es">Travel Trace</span>
+            <span class="lang-en" style="display: none;">Travel Trace</span>
+          </h3>
+          <p>
+            <span class="lang-es">Aplicación para registrar rutas y puntos geolocalizados.</span>
+            <span class="lang-en" style="display: none;">App to record routes and geolocated points.</span>
+          </p>
+          <a href="proyectos.html" class="btn">
+            <span class="lang-es">Ver app</span>
+            <span class="lang-en" style="display: none;">View more</span>
+          </a>
+        </div>
 
-<section class="sobre-mi" id="sobre-mi" data-aos="fade-left">
-  <div class="container sobre-mi-flex">
-    <div class="texto-perfil">
+    
+
+        <!-- Proyecto 3: Cliente Java con Retrofit -->
+        <div class="preview-card" data-aos="fade-right">
+          <img src="img/gestioProducto.png" alt="Cliente Retrofit">
+          <h3>
+            <span class="lang-es">Cliente Retrofit + SpringBoot</span>
+            <span class="lang-en" style="display: none;">Retrofit Client + SpringBoot</span>
+          </h3>
+          <p>
+            <span class="lang-es">
+              Cliente Java que consume una API REST desarrollada con Spring Boot, usando Retrofit para las llamadas HTTP
+              y Gson para el manejo de datos.
+            </span>
+            <span class="lang-en" style="display: none;">
+              Java client consuming a REST API built with Spring Boot, using Retrofit for HTTP requests and Gson for
+              data handling.
+            </span>
+          </p>
+          <a href="https://github.com/CarlaFeni/TiendaOnlineCliente" class="btn" target="_blank">
+            <span class="lang-es">Ver código</span>
+            <span class="lang-en" style="display: none;">View code</span>
+          </a>
+        </div>
+
+      </div>
+
+  </section>
+
+  <!-- Sección de Skills -->
+  <section class="skills" id="skills">
+    <div class="container">
       <div class="lang-es">
-        <h2>¿Quién soy?</h2>
-        <p>¡Hola! Soy Carla, desarrolladora backend multiplataforma. Me especializo en crear soluciones estables, seguras y escalables que impulsan el funcionamiento interno de las aplicaciones.</p>
-        <p>Disfruto resolver problemas complejos, trabajar con APIs y optimizar procesos detrás de escena. Siempre estoy aprendiendo nuevas tecnologías y mejorando mis habilidades para entregar el mejor resultado posible.</p>
-        <ul>
-          <li><strong>Edad:</strong> 24</li>
-          <li><strong>Ubicación:</strong> Valencia, España</li>
-          <li><strong>Email:</strong> carlaborges0905@gmail.com</li>
-        </ul>
-        <a href="Curriculum_Carla.pdf" class="btn">Descargar CV</a>
-      </div>
+        <h2>🧠 Mis Skills</h2>
+        <div class="skills-grid">
 
-      <div class="lang-en" style="display: none;">
-        <h2>Who am I?</h2>
-        <p>Hi! I'm Carla, a cross-platform backend developer. I specialize in building secure, stable, and scalable solutions that power the core of applications.</p>
-        <p>I enjoy solving complex problems, working with APIs, and optimizing systems behind the scenes. I’m always learning new tech to deliver better results.</p>
-        <ul>
-          <li><strong>Age:</strong> 24</li>
-          <li><strong>Location:</strong> Valencia, Spain</li>
-          <li><strong>Email:</strong> carlaborges0905@gmail.com</li>
-        </ul>
-        <a href="Curriculum_Carla.pdf" class="btn">Download CV</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- PROYECTOS DESTACADOS -->
-<section class="proyectos" id="proyectos" data-aos="fade-up">
-  <div class="container">
-    <div class="lang-es">
-      <h2>Mis Proyectos</h2>
-      <p>Estos son algunos proyectos destacados. Podés ver más detalles haciendo clic en cada uno.</p>
-    </div>
-    <div class="lang-en" style="display: none;">
-      <h2>My Projects</h2>
-      <p>Here are some featured projects. Click to see more details about each one.</p>
-    </div>
+          <div class="card" data-aos="fade-right">
+            <h3>💻 Lenguajes</h3>
+            <p>Java, JavaScript, Python, Kotlin, HTML, CSS</p>
+          </div>
 
-    <div class="preview-grid">
-      <!-- Proyecto 1 -->
-      <div class="preview-card" data-aos="fade-left">
-        <img src="img/travelTrace.png" alt="Proyecto 1">
-        <h3>Travel Trace</h3>
-        <p>Aplicación para registrar rutas y puntos geolocalizados.</p>
-        <a href="proyectos.html#travel-trace" class="btn">Ver más</a>
-      </div>
+          <div class="card" data-aos="fade-left">
+            <h3>🧩 Frameworks & Librerías</h3>
+            <p>Spring Boot, JPA (ORM), Firebase (Auth & Storage), Express</p>
+          </div>
 
-      <!-- Proyecto 2 -->
-      <div class="preview-card" data-aos="fade-up">
-        <img src="img/gestioUser.png" alt="Proyecto 2">
-        <h3>Gestión de Usuarios</h3>
-        <p>Plataforma backend con autenticación y roles de usuario.</p>
-        <a href="proyectos.html#user-management" class="btn">Ver más</a>
-      </div>
+          <div class="card" data-aos="fade-right">
+            <h3>🗄️ Bases de Datos</h3>
+            <p>MySQL, PostgreSQL, MongoDB, Oracle, Firebase, JDBC</p>
+          </div>
 
-      <!-- Proyecto 3 -->
-      <div class="preview-card" data-aos="fade-right">
-        <img src="img/gestioProducto.png" alt="Proyecto 3">
-        <h3>API Productos</h3>
-        <p>API RESTful con Node.js y MongoDB para catálogo digital.</p>
-        <a href="proyectos.html#api-productos" class="btn">Ver más</a>
-      </div>
-    </div>
+          <div class="card" data-aos="fade-left">
+            <h3>☁️ Cloud & APIs</h3>
+            <p>Amazon Cloud, Firebase, APIs geográficas, integraciones externas</p>
+          </div>
 
-    <a href="proyectos.html" class="btn">Ver todos los proyectos</a>
-  </div>
-</section>
+          <div class="card" data-aos="fade-up">
+            <h3>🛠️ Otros</h3>
+            <p>Diseño de APIs RESTful, autenticación, automatización de procesos, integración de sistemas</p>
+          </div>
 
-<!-- Sección de Skills -->
-<section class="skills" id="skills">
-  <div class="container">
-    <div class="lang-es">
-      <h2>🧠 Mis Skills</h2>
-      <div class="skills-grid">
-        
-        <div class="card" data-aos="fade-right">
-          <h3>💻 Lenguajes</h3>
-          <p>Java, JavaScript, Python, Kotlin, HTML, CSS</p>
         </div>
-
-        <div class="card" data-aos="fade-left">
-          <h3>🧩 Frameworks & Librerías</h3>
-          <p>Spring Boot, JPA, Firebase (Auth & Storage), LeafletJS</p>
-        </div>
-
-        <div class="card" data-aos="fade-right">
-          <h3>🗄️ Bases de Datos</h3>
-          <p>MySQL, PostgreSQL, MongoDB, Oracle, Firebase</p>
-        </div>
-
-        <div class="card" data-aos="fade-left">
-          <h3>☁️ Cloud & APIs</h3>
-          <p>Amazon Cloud, Firebase, APIs geográficas, integraciones externas</p>
-        </div>
-
-        <div class="card" data-aos="fade-up">
-          <h3>🛠️ Otros</h3>
-          <p>Diseño de APIs RESTful, autenticación, automatización de procesos, integración de sistemas</p>
-        </div>
-        
       </div>
-    </div>
       <!-- English Version -->
-    <div class="lang-en" style="display: none;">
-      <h2>🧠 My Skills</h2>
-      <div class="skills-grid">
-        
-        <div class="card" data-aos="fade-right">
-          <h3>💻 Programming Languages</h3>
-          <p>Java, JavaScript, Python, Kotlin, HTML, CSS</p>
-        </div>
+      <div class="lang-en" style="display: none;">
+        <h2>🧠 My Skills</h2>
+        <div class="skills-grid">
 
-        <div class="card" data-aos="fade-left">
-          <h3>🧩 Frameworks & Libraries</h3>
-          <p>Spring Boot, JPA, Firebase (Auth & Storage), LeafletJS</p>
-        </div>
+          <div class="card" data-aos="fade-right">
+            <h3>💻 Programming Languages</h3>
+            <p>Java, JavaScript, Python, Kotlin, HTML, CSS</p>
+          </div>
 
-        <div class="card" data-aos="fade-right">
-          <h3>🗄️ Databases</h3>
-          <p>MySQL, PostgreSQL, MongoDB, Oracle, Firebase</p>
-        </div>
+          <div class="card" data-aos="fade-left">
+            <h3>🧩 Frameworks & Libraries</h3>
+            <p>Spring Boot, JPA (ORM), Firebase (Auth & Storage), Express</p>
+          </div>
 
-        <div class="card" data-aos="fade-left">
-          <h3>☁️ Cloud & APIs</h3>
-          <p>Amazon Cloud, Firebase, Geographic APIs, external integrations</p>
-        </div>
+          <div class="card" data-aos="fade-right">
+            <h3>🗄️ Databases</h3>
+            <p>MySQL, PostgreSQL, MongoDB, Oracle, Firebase, JDBC</p>
+          </div>
 
-        <div class="card" data-aos="fade-up">
-          <h3>🛠️ Other Skills</h3>
-          <p>RESTful API design, authentication, process automation, system integration</p>
-        </div>
+          <div class="card" data-aos="fade-left">
+            <h3>☁️ Cloud & APIs</h3>
+            <p>Amazon Cloud, Firebase, Geographic APIs, external integrations</p>
+          </div>
 
+          <div class="card" data-aos="fade-up">
+            <h3>🛠️ Other Skills</h3>
+            <p>RESTful API design, authentication, process automation, system integration</p>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer id="contacto">
-  <div class="container">
-    <p>© 2025 Carla Fenimam | carlaborges0905@gmail.com</p>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="container">
+      <p>© 2025 Carla Fenimam | carlaborges0905@gmail.com</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
   <!-- AOS script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 200,
+      easing: 'ease-in-out'
+    });
   </script>
 </body>
+
 </html>

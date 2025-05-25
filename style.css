@@ -215,7 +215,11 @@ body {
   justify-content: center;
   margin: 2rem 0;
 }
-
+.preview-card p {
+  flex-grow: 1; 
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
 .preview-card {
   background-color: #222;
   padding: 1.5rem;
@@ -223,8 +227,21 @@ body {
   width: 280px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  
+}
+.preview-card .card-footer {
+  margin-top: auto; 
 }
 
+.preview-card .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2d4f47;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
 .preview-card img {
   width: 100%;
   border-radius: 8px;
