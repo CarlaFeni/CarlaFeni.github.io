@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Carla Fenimam</title>
   <link rel="stylesheet" href="style.css" />
- 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" data-aos="fade-down">
   <div class="nav-container">
     <div class="nav-left">
       <a href="#inicio" class="nav-logo">Carla Fenimam</a>
@@ -37,10 +37,10 @@
 
 
 <!-- HEADER -->
-<header class="hero" id="inicio">
+<header class="hero" id="inicio" data-aos="fade-right">
   <div class="container hero-flex">
     <div class="foto-perfil">
-      <img src="fotoportfolio.jpg" alt="Foto de Carla" />
+      <img src="img/fotoportfolio.jpg" alt="Foto de Carla" />
     </div>
     <div class="texto-hero">
       <div class="lang-es">
@@ -57,7 +57,8 @@
   </div>
 </header>
 
-<section class="sobre-mi" id="sobre-mi">
+
+<section class="sobre-mi" id="sobre-mi" data-aos="fade-left">
   <div class="container sobre-mi-flex">
     <div class="texto-perfil">
       <div class="lang-es">
@@ -87,7 +88,7 @@
   </div>
 </section>
 <!-- PROYECTOS DESTACADOS -->
-<section class="proyectos" id="proyectos">
+<section class="proyectos" id="proyectos" data-aos="fade-up">
   <div class="container">
     <div class="lang-es">
       <h2>Mis Proyectos</h2>
@@ -100,24 +101,24 @@
 
     <div class="preview-grid">
       <!-- Proyecto 1 -->
-      <div class="preview-card">
-        <img src="travelTrace.png" alt="Proyecto 1">
+      <div class="preview-card" data-aos="fade-left">
+        <img src="img/travelTrace.png" alt="Proyecto 1">
         <h3>Travel Trace</h3>
         <p>Aplicación para registrar rutas y puntos geolocalizados.</p>
         <a href="proyectos.html#travel-trace" class="btn">Ver más</a>
       </div>
 
       <!-- Proyecto 2 -->
-      <div class="preview-card">
-        <img src="proyecto2.png" alt="Proyecto 2">
+      <div class="preview-card" data-aos="fade-up">
+        <img src="img/gestioUser.png" alt="Proyecto 2">
         <h3>Gestión de Usuarios</h3>
         <p>Plataforma backend con autenticación y roles de usuario.</p>
         <a href="proyectos.html#user-management" class="btn">Ver más</a>
       </div>
 
       <!-- Proyecto 3 -->
-      <div class="preview-card">
-        <img src="proyecto3.png" alt="Proyecto 3">
+      <div class="preview-card" data-aos="fade-right">
+        <img src="img/gestioProducto.png" alt="Proyecto 3">
         <h3>API Productos</h3>
         <p>API RESTful con Node.js y MongoDB para catálogo digital.</p>
         <a href="proyectos.html#api-productos" class="btn">Ver más</a>
@@ -128,26 +129,70 @@
   </div>
 </section>
 
-
-<!-- SERVICIOS -->
-<section class="servicios">
+<!-- Sección de Skills -->
+<section class="skills" id="skills">
   <div class="container">
     <div class="lang-es">
-      <h2>Mis Servicios</h2>
-      <div class="grid">
-        <div class="card">🖥️ <h3>Desarrollo Backend</h3><p>APIs RESTful, lógica de negocio, gestión de bases de datos y arquitectura robusta.</p></div>
-        <div class="card">⚙️ <h3>Integraciones de Sistemas</h3><p>Conexión con servicios externos, APIs de terceros, y automatización de procesos.</p></div>
-        <div class="card">🛡️ <h3>Seguridad y Autenticación</h3><p>Login seguro, roles de usuario y protección de datos sensibles.</p></div>
-        <div class="card">🎨 <h3>Diseño UI/UX</h3><p>Interfaces limpias y centradas en el usuario.</p></div>
+      <h2>🧠 Mis Skills</h2>
+      <div class="skills-grid">
+        
+        <div class="card" data-aos="fade-right">
+          <h3>💻 Lenguajes</h3>
+          <p>Java, JavaScript, Python, Kotlin, HTML, CSS</p>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+          <h3>🧩 Frameworks & Librerías</h3>
+          <p>Spring Boot, JPA, Firebase (Auth & Storage), LeafletJS</p>
+        </div>
+
+        <div class="card" data-aos="fade-right">
+          <h3>🗄️ Bases de Datos</h3>
+          <p>MySQL, PostgreSQL, MongoDB, Oracle, Firebase</p>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+          <h3>☁️ Cloud & APIs</h3>
+          <p>Amazon Cloud, Firebase, APIs geográficas, integraciones externas</p>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+          <h3>🛠️ Otros</h3>
+          <p>Diseño de APIs RESTful, autenticación, automatización de procesos, integración de sistemas</p>
+        </div>
+        
       </div>
     </div>
+      <!-- English Version -->
     <div class="lang-en" style="display: none;">
-      <h2>My Services</h2>
-      <div class="grid">
-        <div class="card">🖥️ <h3>Backend Development</h3><p>RESTful APIs, business logic, database management, and robust architecture.</p></div>
-        <div class="card">⚙️ <h3>Systems Integration</h3><p>Connecting external services, third-party APIs, and process automation.</p></div>
-        <div class="card">🛡️ <h3>Security & Authentication</h3><p>Secure login, user roles, and sensitive data protection.</p></div>
-        <div class="card">🎨 <h3>UI/UX Design</h3><p>Clean, user-centered interfaces.</p></div>
+      <h2>🧠 My Skills</h2>
+      <div class="skills-grid">
+        
+        <div class="card" data-aos="fade-right">
+          <h3>💻 Programming Languages</h3>
+          <p>Java, JavaScript, Python, Kotlin, HTML, CSS</p>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+          <h3>🧩 Frameworks & Libraries</h3>
+          <p>Spring Boot, JPA, Firebase (Auth & Storage), LeafletJS</p>
+        </div>
+
+        <div class="card" data-aos="fade-right">
+          <h3>🗄️ Databases</h3>
+          <p>MySQL, PostgreSQL, MongoDB, Oracle, Firebase</p>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+          <h3>☁️ Cloud & APIs</h3>
+          <p>Amazon Cloud, Firebase, Geographic APIs, external integrations</p>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+          <h3>🛠️ Other Skills</h3>
+          <p>RESTful API design, authentication, process automation, system integration</p>
+        </div>
+
       </div>
     </div>
   </div>
@@ -160,5 +205,10 @@
   </div>
 </footer>
 <script src="script.js"></script>
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
