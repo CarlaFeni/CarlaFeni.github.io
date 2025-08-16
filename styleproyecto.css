@@ -43,10 +43,9 @@
 }
 
 body {
-  background-color: #1c1c1e;
-  color: #f1f1f1;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
+  background-color: #c9c9c9;
+  color: #000000;
+  font-family: 'Intel One Mono', monospace;  margin: 0;
   padding: 0;
   overflow-x: hidden; /* 💡 evita desplazamiento lateral innecesario */
 }
@@ -76,13 +75,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ffffff;
+  color: #000000;
 }
 
 p,
 li,
 a {
-  color: #eaeaea;
+  color: #000000;
 }
 
 a:hover {
@@ -121,7 +120,7 @@ a:hover {
 .resumen-proyecto p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #eaeaea;
+  color: #000000;
   font-style: italic;
   padding: 0 1rem;
 }
