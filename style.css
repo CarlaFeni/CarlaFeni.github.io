@@ -289,4 +289,19 @@ body {
   margin-bottom: 1rem;
 }
 
+#typing {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-right: 3px solid #111; /* cursor */
+  display: inline-block;
+  padding-right: 5px;
+  white-space: pre-line; /* permite saltos de línea si usas \n */
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #111; }
+}
+
 
