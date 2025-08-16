@@ -184,7 +184,7 @@ body {
   .nav-links li a {
     color: #000000;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     transition: color 0.3s;
     font-size: 1.2rem;
   }
@@ -288,4 +288,5 @@ body {
   color: #2d4f47;
   margin-bottom: 1rem;
 }
+
 
